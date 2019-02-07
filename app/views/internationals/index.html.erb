@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Internationals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @internationals.each do |international| %>
+      <tr>
+        <td><%= international.name %></td>
+        <td><%= international.country %></td>
+        <td><%= link_to 'Show', international %></td>
+        <td><%= link_to 'Edit', edit_international_path(international) %></td>
+        <td><%= link_to 'Destroy', international, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New International', new_international_path %>

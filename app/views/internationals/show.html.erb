@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @international.name %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @international.country %>
+</p>
+
+<%= link_to 'Edit', edit_international_path(@international) %> |
+<%= link_to 'Back', internationals_path %>
