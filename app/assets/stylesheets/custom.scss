@@ -1,0 +1,59 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+  }
+  
+h1 {
+font-size: 3em;
+letter-spacing: -2px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+h3 {
+font-size: 32px;
+letter-spacing: -1px;
+margin-bottom: 30px;
+text-align: center;
+font-weight: normal;
+color: $gray-light;
+}
+
+p {
+font-size: 22px;
+line-height: 1.7em;
+}
+
+/* header */
+
+header {
+    background-color: lightblue;
+    font-size: 22px;
+    padding-top: 20px;
+    .navbar {
+      padding-top: 10px;
+    }
+}
+
+/* footer */
+
+footer {
+	position: absolute;
+	font-size: 22px;
+	color: red;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+	text-align: center;
+}

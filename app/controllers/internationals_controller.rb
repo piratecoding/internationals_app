@@ -29,8 +29,6 @@ class InternationalsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /internationals/1
-  # PATCH/PUT /internationals/1.json
   def update
     respond_to do |format|
       if @international.update(international_params)
@@ -43,8 +41,6 @@ class InternationalsController < ApplicationController
     end
   end
 
-  # DELETE /internationals/1
-  # DELETE /internationals/1.json
   def destroy
     @international.destroy
     respond_to do |format|
