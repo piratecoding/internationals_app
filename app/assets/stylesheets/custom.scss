@@ -8,6 +8,7 @@ body {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,22 +39,27 @@ line-height: 1.7em;
 /* header */
 
 header {
-    background-color: lightblue;
-    font-size: 22px;
+    background-color:  #80ccff;
+    font-size: 20px;
     padding-top: 20px;
     .navbar {
       padding-top: 10px;
+    }
+    .navbar a {
+      color: #ffffe6;
+      font-size: 24px;
     }
 }
 
 /* footer */
 
-footer {
+.footer {
 	position: absolute;
-	font-size: 22px;
-	color: red;
   left: 0;
   bottom: 0;
   width: 100%;
-	text-align: center;
+  text-align: center;
+  p {
+    font-size: 12px;
+  }
 }
