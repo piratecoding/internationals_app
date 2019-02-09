@@ -20,6 +20,7 @@
         <tr>
           <td><%= link_to international.name, international_path(international) %></td>          
           <td><%= international.country %></td>
+          <td><%= link_to 'Add friend', friendships_create_path(:friend_id => international), method: :post, class: 'btn btn-block btn-default' %></td>
           <td><%= link_to 'Show', international, class: 'btn btn-block btn-default' %></td>
           <td><%= link_to 'Edit', edit_international_path(international), class: 'btn btn-block btn-default' %></td>
           <td><%= link_to 'Destroy', international, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-block btn-danger' %></td>
