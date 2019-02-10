@@ -4,12 +4,22 @@
 
 /* universal */
 
+html {
+  position: relative;
+  min-height: 100%;
+ }
+
 body {
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 30px;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  overflow: auto;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;
@@ -32,7 +42,7 @@ color: $gray-light;
 }
 
 p {
-font-size: 22px;
+font-size: 20px;
 line-height: 1.7em;
 }
 
@@ -41,25 +51,29 @@ line-height: 1.7em;
 header {
     background-color:  #80ccff;
     font-size: 20px;
-    padding-top: 20px;
-    .navbar {
-      padding-top: 10px;
-    }
+    padding-top: 5px;
     .navbar a {
       color: #ffffe6;
-      font-size: 24px;
+      font-size: 22px;
     }
 }
 
 /* footer */
 
-.footer {
-	position: absolute;
-  left: 0;
+footer {
+  position: relative;
+  background-color: white;
   bottom: 0;
-  width: 100%;
+  margin-top: -40px;
   text-align: center;
+  border-top: 1px solid black;
   p {
     font-size: 12px;
   }
+}
+
+
+/* buttons */
+.btn {
+  margin: 2px;
 }

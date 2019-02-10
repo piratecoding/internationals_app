@@ -12,3 +12,16 @@
 
 <%= link_to 'Edit', edit_international_path(@international) %> |
 <%= link_to 'Back', internationals_path %>
+
+
+<div>
+  <%for friendship in @international.friendships do %>
+    <%= friendship.friend.name %>
+  <% end %>
+</div>
+
+<div>
+  <% for international in @international.inverse_friends %>
+  <%=international.name %>
+  <% end %>
+</div>
