@@ -15,7 +15,7 @@
           <% @internationals.each do |international| %>
             <tr>
               <td><%= link_to international.name, international_path(international) %></td>          
-              <td><%= international.country %></td>
+              <td><%= international.country_name %></td>
               <td><%= international.friendships.count %></td>
               <td><%= link_to 'Add friend', friendships_create_path(:friend_id => international), method: :post, class: 'btn btn-default' %></td>
               <td><%= link_to 'Show', international, class: 'btn btn-info btn-default' %></td>

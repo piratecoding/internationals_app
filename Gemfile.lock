@@ -189,6 +189,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4.0)
   byebug
   coffee-rails (~> 4.2)
+  countries
   country_select (~> 4.0)
   jbuilder (~> 2.5)
   jquery-rails

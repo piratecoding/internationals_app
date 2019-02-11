@@ -1,22 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">    
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @international.name %>
-</p>
+      <p>
+        <strong>Name:</strong>
+        <%= @international.name %>
+      </p>
 
-<p>
-  <strong>Country:</strong>
-  <%= @international.country %>
-</p>
+      <p>
+        <strong>Country:</strong>
+        <%= @international.country_name %>
+      </p>
 
-<%= link_to 'Edit', edit_international_path(@international) %> |
-<%= link_to 'Back', internationals_path %>
+      <%= link_to 'Edit', edit_international_path(@international), class: 'btn btn-warning' %> |
+      <%= link_to 'Back', internationals_path, class: 'btn btn-default' %>
 
-
-<div>
-  <%for friendship in @international.friendships do %>
-    <%= friendship.friend.name %>
-  <% end %>
+      <h2>List of friends</h2>
+      <table class='table'>
+        <thead>
+          <th>Name</th>
+        </thead>
+        
+        <tbody>
+          <%for friendship in @international.friendships do %>
+          <tr>
+            <td><%= link_to friendship.friend.name,  %></td>
+          </tr>            
+          <% end %>
+        </tbody>      
+      </table>
+    </div>
+  </div>
 </div>
+
+
 

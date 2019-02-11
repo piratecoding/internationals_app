@@ -1,6 +1,14 @@
-<h1>Editing International</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <p id="notice"><%= notice %></p>
 
-<%= render 'form', international: @international %>
+      <h1>Editing International</h1>
 
-<%= link_to 'Show', @international %> |
-<%= link_to 'Back', internationals_path %>
+      <%= render 'form', international: @international %>
+
+      <%= link_to 'Show', @international, class: 'btn btn-default' %> |
+      <%= link_to 'Back', internationals_path, class: 'btn btn-default' %>
+    </div>
+  </div>
+</div>

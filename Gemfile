@@ -33,6 +33,7 @@ gem 'bootstrap-sass', '~> 3.4.0'
 gem 'sassc-rails', '>= 2.0.0'
 
 gem 'country_select', '~> 4.0'
+gem 'countries'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
