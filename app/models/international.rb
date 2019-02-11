@@ -10,4 +10,8 @@ class International < ApplicationRecord
         country = self.country
         ISO3166::Country[country]
     end
+
+    def self.all_except(international)
+        where.not(id: international)
+    end
 end

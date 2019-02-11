@@ -23,9 +23,9 @@
         </thead>
         
         <tbody>
-          <%for friendship in @international.friendships do %>
+          <% for friendship in @international.friendships do %>
           <tr>
-            <td><%= link_to friendship.friend.name,  %></td>
+            <td><%= link_to friendship.friend.name, international_path(friendship.friend)  %></td>
           </tr>            
           <% end %>
         </tbody>      
@@ -33,6 +33,4 @@
     </div>
   </div>
 </div>
-
-
 
