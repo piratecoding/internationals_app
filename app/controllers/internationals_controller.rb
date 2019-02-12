@@ -6,6 +6,7 @@ class InternationalsController < ApplicationController
   end
 
   def show
+    @internationals = International.all
     @other_internationals = International.other_internationals(params[:id])
   end
 
