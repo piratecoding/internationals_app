@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   resources :internationals
-  resources :friendships
 
   root 'internationals#index'
   

@@ -25,15 +25,16 @@
         <tbody>
           <% for friendship in @international.friendships do %>
           <tr>
-            <td><%= link_to friendship.friend.name, international_path(friendship.friend)  %></td>
+            <td><%= link_to friendship.friend.name, international_path(friendship.friend) %></td>
+            <td><%= link_to 'Delete friend', friendships_destroy_path(friendship), class: 'btn btn-default btn-danger' %></td>
           </tr>            
           <% end %>
         </tbody>      
       </table>
     </div>
     <div class="col-md-5">
-      <h3>List of potential friends</h3>
-      <table class="table table-bordered">
+      <h3>Add new friends</h3>
+      <table class="table">
         <thead>
           <tr>
             <th>Name</th>
@@ -41,7 +42,7 @@
         </thead>
 
         <tbody>
-        <% @internationals.each do |international| %>
+        <% @internationals.all_except.each do |international| %>
           <tr>
             <td><%= link_to international.name, international_path(international) %></td>
             <td><%= link_to 'Add friend', friendships_create_path(:friend_id => international), method: :post, class: 'btn btn-default' %></td>

@@ -11,5 +11,5 @@ class International < ApplicationRecord
         ISO3166::Country[country]
     end
 
-    scope :other_internationals, -> (id) { where.not(id: ids) }
+    scope :all_except, -> (international) { where.not(id: international) }
 end
